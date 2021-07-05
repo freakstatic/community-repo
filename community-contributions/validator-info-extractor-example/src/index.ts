@@ -2,7 +2,6 @@ import { WsProvider, ApiPromise } from "@polkadot/api";
 import { types } from "@joystream/types";
 
 import { BlocksFound, Eras, blocksFound, eraStats } from "./validators"
-const delay = (ms: any) => new Promise(res => setTimeout(res, ms));
 
 async function main () {
     const provider = new WsProvider('ws://127.0.0.1:9944');
@@ -54,7 +53,6 @@ async function main () {
             era = newEra
         }
         //lastHash = hash
-        // await delay(50);
     }
     console.log("blocksFoundNew = ",JSON.stringify(blocksFoundNew, null, 4))
     console.log("eraStatsNew = ",JSON.stringify(eraStatsNew, null, 4))
