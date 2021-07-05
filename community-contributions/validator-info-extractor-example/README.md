@@ -1,6 +1,6 @@
-# Validators Extractor
+# Validator Info Extractor
 
-This scripts collects info about eras and validators  
+Example of how to extract info about eras and validators from the chain state  
 
  ## Setup
  ```
@@ -9,5 +9,5 @@ This scripts collects info about eras and validators
 
  ## Usage
  ```
-node lib/index,js 
+node lib/index.js 
  ```
